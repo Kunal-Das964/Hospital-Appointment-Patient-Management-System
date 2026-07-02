@@ -1,0 +1,17 @@
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Infrastructure.deps.json
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Infrastructure.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Infrastructure.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Application.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Domain.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Application.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\bin\Debug\net8.0\HospitalManagement.Domain.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\Hospital.04B4BFA6.Up2Date
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\refint\HospitalManagement.Infrastructure.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\HospitalManagement.Infrastructure.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Infrastructure\obj\Debug\net8.0\ref\HospitalManagement.Infrastructure.dll
