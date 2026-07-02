@@ -1,0 +1,11 @@
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\bin\Debug\net8.0\HospitalManagement.Domain.deps.json
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\bin\Debug\net8.0\HospitalManagement.Domain.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\bin\Debug\net8.0\HospitalManagement.Domain.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.AssemblyInfo.cs
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\refint\HospitalManagement.Domain.dll
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\HospitalManagement.Domain.pdb
+C:\Users\kunal.das\OneDrive - Acuvate Software Private Limited\Desktop\HospitalManagement\HospitalManagement.Domain\obj\Debug\net8.0\ref\HospitalManagement.Domain.dll
