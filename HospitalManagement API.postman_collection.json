@@ -1,0 +1,538 @@
+{
+  "info": {
+    "_postman_id": "7e637ad6-9e0d-4bdd-9318-73eef47c06e7",
+    "name": "HospitalManagement API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55366758",
+    "_collection_link": "https://go.postman.co/collection/55366758-7e637ad6-9e0d-4bdd-9318-73eef47c06e7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Patient",
+      "item": [
+        {
+          "name": "AddPatient",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientCode\": \"PAT008\",\r\n  \"fullName\": \"Rahul Gupta\",\r\n  \"dateOfBirth\": \"1995-06-15\",\r\n  \"gender\": \"M\",\r\n  \"phoneNumber\": \"9222222201\",\r\n  \"email\": \"rahul@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/patients",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RegisterPatient-Duplicate Phone Number",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientCode\": \"PAT009\",\r\n  \"fullName\": \"Test User\",\r\n  \"dateOfBirth\": \"1990-01-01\",\r\n  \"gender\": \"M\",\r\n  \"phoneNumber\": \"9111111101\",\r\n  \"email\": \"test@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/patients",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Patient",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientCode\": \"PAT009\",\r\n  \"fullName\": \"Test User\",\r\n  \"dateOfBirth\": \"1990-01-01\",\r\n  \"gender\": \"M\",\r\n  \"phoneNumber\": \"9111111101\",\r\n  \"email\": \"test@gmail.com\"\r\n}"
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/patients",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Patient",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"fullName\": \"Amit Kumar Updated\",\r\n  \"phoneNumber\": \"9111111101\",\r\n  \"email\": \"amitupdated@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/patients/1",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deactivate Patient",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/patients/7",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients",
+                "7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Patient not Found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/patients/999",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "patients",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Doctor",
+      "item": [
+        {
+          "name": "Get All Doctor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/doctors",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "doctors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Doctor by specialization",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/doctors?specialization=Cardiology",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "doctors"
+              ],
+              "query": [
+                {
+                  "key": "specialization",
+                  "value": "Cardiology"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Available Doctor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/doctors?isAvailable=true",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "doctors"
+              ],
+              "query": [
+                {
+                  "key": "isAvailable",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Doctor  by Specialization + Availability",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/doctors?specialization=Cardiology&isAvailable=true",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "doctors"
+              ],
+              "query": [
+                {
+                  "key": "specialization",
+                  "value": "Cardiology"
+                },
+                {
+                  "key": "isAvailable",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Appointment",
+      "item": [
+        {
+          "name": "Book Appointment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientId\": 1,\r\n  \"doctorId\": 1,\r\n  \"appointmentDate\": \"2026-06-02T10:00:00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Book Appointment - Doctor Unavailable",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientId\": 1,\r\n  \"doctorId\": 5,\r\n  \"appointmentDate\": \"2026-06-02T11:00:00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Book Appointment — Past Date (400 test)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientId\": 1,\r\n  \"doctorId\": 1,\r\n  \"appointmentDate\": \"2020-01-01T10:00:00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel Appointment",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/1/cancel",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "1",
+                "cancel"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel Already Cancelled (400 test)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/1/cancel",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "1",
+                "cancel"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Upcoming Appointment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/upcoming",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "upcoming"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Appointment by doctor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/doctor/1",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "doctor",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "Consolidated Report",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/report",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "report"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Doctor appointment count",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/report/doctor-counts",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "report",
+                "doctor-counts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Revenue by specialization",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/report/revenue",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "report",
+                "revenue"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Duplicate Booking",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}/api/appointments/report/duplicates",
+              "host": [
+                "{{BaseURL}}"
+              ],
+              "path": [
+                "api",
+                "appointments",
+                "report",
+                "duplicates"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "value": ""
+    }
+  ]
+}
